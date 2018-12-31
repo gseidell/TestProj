@@ -65,23 +65,24 @@ export default class MapScreen extends React.Component {
         if (z == 1) {
             return (
                 <Image
-                source={{ uri: 'http://www.clker.com/cliparts/W/v/c/j/6/s/bike-clip-art-md.png' }}
-                style={{ width: 18, height: 10}}
+                source={require('../assets/images/big.png') }
+                style={{ width: 18 ,resizeMode:'center'}}
             />)
         }
 
         if (z == 3) {
             return (
                 <Image
-                    source={{ uri: 'http://worldartsme.com/images/red-dot-clipart-1.jpg' }}
-                    style={{ width: 3, height: 3 }}
+                source={require('../assets/images/sml.png') }
+                    style={{ width: 3,resizeMode:'center'}}
                 />)
         }
         else{
             return (
                 <Image
-                    source={{ uri: 'http://www.clker.com/cliparts/W/v/c/j/6/s/bike-clip-art-md.png' }}
-                    style={{ width: 9, height: 5 }}
+                source={require('../assets/images/med.png') }
+                    style={{ width: 10,resizeMode:'center'}}
+                    
                 />)
         }
     }
